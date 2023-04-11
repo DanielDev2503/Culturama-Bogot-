@@ -6,7 +6,11 @@ freno = 0.25;
 
 	
 if keyboard_check(vk_right){
+<<<<<<< HEAD
   motion_add(0, velocidad);
+=======
+  motion_add(0, 0.5);
+>>>>>>> 9945726f67e6077e9914a6b91bd5bbee0c3393c3
 }
 if keyboard_check(vk_left) {
   motion_add(180, velocidad);
