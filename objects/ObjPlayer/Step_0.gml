@@ -43,9 +43,9 @@ if !keyboard_check(vk_down){
 //velocidad máxima
 {
 if(abs(hspeed)>velocidad_maxima)
-	hspeed=velocidad_maxima*(hspeed/hspeed);
-if(abs(vspeed)>10)
-	vspeed=velocidad_maxima*(vspeed/vspeed);
+	hspeed=velocidad_maxima*sign(hspeed);
+if(abs(vspeed)>velocidad_maxima)
+	vspeed=velocidad_maxima*sign(vspeed);
 //colision con muro
 }
 {
