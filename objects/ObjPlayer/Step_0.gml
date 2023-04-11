@@ -1,8 +1,6 @@
 //movimiento
 {
-
-	
-if keyboard_check(vk_right){
+if keyboard_check(vk_right) {
   motion_add(0, 0.5);
 }
 if keyboard_check(vk_left) {
