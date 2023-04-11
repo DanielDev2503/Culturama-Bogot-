@@ -1,53 +1,52 @@
+velocidad = 0.5;
+velocidad_maxima = 10;
+freno = 0.25;
 //movimiento
 {
-if keyboard_check(vk_right) {
-  motion_add(0, 0.5);
+
+	
+if keyboard_check(vk_right){
+  motion_add(0, velocidad);
 }
 if keyboard_check(vk_left) {
-  motion_add(180, 0.5);
+  motion_add(180, velocidad);
 }
 if keyboard_check(vk_up) {
-  motion_add(90, 0.5);
+  motion_add(90, velocidad);
 }
 if keyboard_check(vk_down) {
-  motion_add(270, 0.5);
+  motion_add(270, velocidad);
 }
 }
 //desaceleración
 {
-if !keyboard_check(vk_right){
-	if(hspeed>0){
-		motion_add(0, -0.25);
-	}
+
+if !keyboard_check(vk_right) && hspeed > 0 {
+	hspeed = sign(hspeed) * max(0, abs(hspeed) - freno);
 }
-if !keyboard_check(vk_left){
-	if(hspeed<0){
-		motion_add(180, -0.25);
-	}
+if !keyboard_check(vk_left) && hspeed < 0 {
+	hspeed = sign(hspeed) * max(0, abs(hspeed) - freno);
 }
-if !keyboard_check(vk_up){
-	if(vspeed<0){
-		motion_add(90, -0.25);
-	}
+if !keyboard_check(vk_up) && vspeed < 0 {
+	vspeed = sign(vspeed) * max(0, abs(vspeed) - freno);
 }
-if !keyboard_check(vk_down){
-	if(vspeed>0){
-		motion_add(270, -0.25);
-	}
+if !keyboard_check(vk_down) && vspeed > 0 {
+	vspeed = sign(vspeed) * max(0, abs(vspeed) - freno);
 }
 }
 //velocidad máxima
 {
-if(hspeed>10)
-	hspeed=10;
-if(hspeed<-10)
-	hspeed=-10;
-if(vspeed>10)
-	vspeed=10;
-if(vspeed<-10)
-	vspeed=-10;
-}
+if(speed>velocidad_maxima)
+	motion_set(direction,velocidad_maxima);
+
 //colision con muro
+}
 {
-	
+	if !place_free(x+hspeed,y){
+		hspeed=0;
+	}
+	if !place_free(x,y+vspeed){
+		vspeed = 0;
+	}
+		
 }
