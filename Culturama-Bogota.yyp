@@ -31,12 +31,15 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.2.0.71",
   },
   "resources": [
+    {"id":{"name":"Objnpc","path":"objects/Objnpc/Objnpc.yy",},},
     {"id":{"name":"SprMuro","path":"sprites/SprMuro/SprMuro.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"ObjMuro","path":"objects/ObjMuro/ObjMuro.yy",},},
     {"id":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},},
+    {"id":{"name":"SprNpc","path":"sprites/SprNpc/SprNpc.yy",},},
     {"id":{"name":"SprPlayer","path":"sprites/SprPlayer/SprPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

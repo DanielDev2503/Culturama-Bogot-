@@ -17,6 +17,7 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"Objnpc","order":2,"path":"objects/Objnpc/Objnpc.yy",},
     {"name":"SprMuro","order":18,"path":"sprites/SprMuro/SprMuro.yy",},
     {"name":"ObjMuro","order":1,"path":"objects/ObjMuro/ObjMuro.yy",},
     {"name":"SprPlayer","order":19,"path":"sprites/SprPlayer/SprPlayer.yy",},
