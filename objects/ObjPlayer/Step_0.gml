@@ -41,9 +41,11 @@ if(speed>velocidad_maxima)
 
 //colision con muro
 }
+//colisiones muro
 {
 	if !place_free(x+hspeed,y){
 		hspeed=0;
+		
 	}
 	if !place_free(x,y+vspeed){
 		vspeed = 0;
@@ -51,3 +53,5 @@ if(speed>velocidad_maxima)
 	
 		
 }
+
+	

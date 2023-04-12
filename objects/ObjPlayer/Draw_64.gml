@@ -2,10 +2,10 @@
 /// @DnDVersion : 1
 /// @DnDHash : 6C3280D2
 /// @DnDArgument : "x" "200"
-/// @DnDArgument : "y" "200"
-/// @DnDArgument : "caption" ""hspeed: ""
-/// @DnDArgument : "var" "hspeed"
-draw_text(200, 200, string("hspeed: ") + string(hspeed));
+/// @DnDArgument : "y" "100"
+/// @DnDArgument : "caption" ""capajugador: ""
+/// @DnDArgument : "var" "depth"
+draw_text(200, 100, string("capajugador: ") + string(depth));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
@@ -24,3 +24,12 @@ draw_text(200, 200, string("hspeed: ") + string(hspeed));
 /// @DnDArgument : "caption" ""speed: ""
 /// @DnDArgument : "var" "speed"
 draw_text(200, 150, string("speed: ") + string(speed));
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 667B5159
+/// @DnDArgument : "x" "200"
+/// @DnDArgument : "y" "250"
+/// @DnDArgument : "caption" ""capanpc: ""
+/// @DnDArgument : "var" "Objnpc.depth"
+draw_text(200, 250, string("capanpc: ") + string(Objnpc.depth));
