@@ -48,5 +48,6 @@ if(speed>velocidad_maxima)
 	if !place_free(x,y+vspeed){
 		vspeed = 0;
 	}
+	
 		
 }
