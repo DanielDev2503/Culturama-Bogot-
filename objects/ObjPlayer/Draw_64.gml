@@ -31,5 +31,5 @@ draw_text(200, 150, string("speed: ") + string(speed));
 /// @DnDArgument : "x" "200"
 /// @DnDArgument : "y" "250"
 /// @DnDArgument : "caption" ""capanpc: ""
-/// @DnDArgument : "var" "Objnpc.depth"
-draw_text(200, 250, string("capanpc: ") + string(Objnpc.depth));
+/// @DnDArgument : "var" "ObjNpc.depth"
+draw_text(200, 250, string("capanpc: ") + string(ObjNpc.depth));

@@ -7,6 +7,7 @@
     {"name":"Líneas temporales","order":8,"path":"folders/Líneas temporales.yy",},
     {"name":"Notas","order":13,"path":"folders/Notas.yy",},
     {"name":"Objetos","order":9,"path":"folders/Objetos.yy",},
+    {"name":"GUI","order":4,"path":"folders/Objetos/GUI.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Rutas","order":4,"path":"folders/Rutas.yy",},
     {"name":"Salas","order":10,"path":"folders/Salas.yy",},
@@ -17,9 +18,10 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"Objnpc","order":2,"path":"objects/Objnpc/Objnpc.yy",},
+    {"name":"ObjNpc","order":2,"path":"objects/ObjNpc/ObjNpc.yy",},
     {"name":"SprMuro","order":18,"path":"sprites/SprMuro/SprMuro.yy",},
     {"name":"ObjMuro","order":1,"path":"objects/ObjMuro/ObjMuro.yy",},
+    {"name":"FuncionesElementosNPC","order":1,"path":"scripts/FuncionesElementosNPC/FuncionesElementosNPC.yy",},
     {"name":"SprPlayer","order":19,"path":"sprites/SprPlayer/SprPlayer.yy",},
   ],
 }

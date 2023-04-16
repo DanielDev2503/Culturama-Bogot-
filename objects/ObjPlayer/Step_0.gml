@@ -1,6 +1,6 @@
-velocidad = 0.5;
-velocidad_maxima = 10;
-freno = 0.25;
+var velocidad = 0.5;
+var velocidad_maxima = 10;
+var freno = 0.25;
 //movimiento
 {
 
@@ -45,13 +45,30 @@ if(speed>velocidad_maxima)
 {
 	if !place_free(x+hspeed,y){
 		hspeed=0;
-		
 	}
 	if !place_free(x,y+vspeed){
 		vspeed = 0;
 	}
-	
+	var ANpcCercano = NpcCercano;
+	NpcCercano = instance_place(x,y,ObjNpc);
+	if (NpcCercano!=ANpcCercano){
 		
+		if (NpcCercano) {
+			crearBotonInteractuar(NpcCercano);
+			
+		}else{
+			eliminarBotonInteractuar(ANpcCercano);
+		}
+	}
+	
+	if (speed>0){
+			if (NpcCercano){
+				capas();
+			}
+		}
 }
+
+
+
 
 	

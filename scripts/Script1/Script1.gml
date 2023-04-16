@@ -1,13 +1,9 @@
 function capas(){
-	if(y>Objnpc.y){
-	depth=0;
-	Objnpc.depth=1;
-	}
-		
-	if(y<=Objnpc.y){
-	depth=1;
-	Objnpc.depth=0;
+	if(y>NpcCercano.y){
+		depth=-1;
 	
+	}else{
+		depth = 1;
 	}
 	
 }
