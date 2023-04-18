@@ -50,22 +50,20 @@ if(speed>velocidad_maxima)
 		vspeed = 0;
 	}
 	var ANpcCercano = NpcCercano;
-	NpcCercano = instance_place(x,y,ObjNpc);
+	NpcCercano = instance_place(x,y,ObjNPCBase);
 	if (NpcCercano!=ANpcCercano){
-		
+		if (ANpcCercano) eliminarBotonInteractuar(ANpcCercano);
 		if (NpcCercano) {
 			crearBotonInteractuar(NpcCercano);
 			
-		}else{
-			eliminarBotonInteractuar(ANpcCercano);
 		}
 	}
 	
 	if (speed>0){
-			if (NpcCercano){
-				capas();
-			}
+		if (NpcCercano){
+			capas();
 		}
+	}
 }
 
 

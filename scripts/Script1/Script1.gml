@@ -1,9 +1,13 @@
 function capas(){
-	if(y>NpcCercano.y){
-		depth=-1;
-	
-	}else{
-		depth = 1;
+
+	depth = -bbox_bottom
+	if (NpcCercano.indicadorInteraccion){
+		depthIndicador = layer_get_depth(global.CAPA_INDICADORES);
+		
+		if (NpcCercano.depth>depth && depth>depthIndicador){
+			
+			depth=round(depthIndicador)-1;
+		}
 	}
 	
 }
