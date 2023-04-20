@@ -7,17 +7,21 @@ if (!escribiendo) exit;
 var infoMensaje = dialogo[indMensaje];
 
 var mensaje = infoMensaje.mensaje;
+var longitudMensaje = string_length(mensaje);
 
-if (letras < string_length(mensaje)){
-	letras+=velocidadEscritura;
-}
 
-else{
+mensaje_completo = letras>=longitudMensaje;
+if (!mensaje_completo){
+	if (keyboard_check_pressed(vk_space)){
+		letras = longitudMensaje;
+	}
+	else letras+=velocidadEscritura;
+}else{
 	if (keyboard_check_pressed(vk_space)){
 		if ((indMensaje+1)<array_length(dialogo)){
 			pasarMensaje();
 		}else{
-			show_message("dialogo terminado");
+			escribiendo = false;
 			cerrar_cuadro_dialogo();
 		}
 	}
